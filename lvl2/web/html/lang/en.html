@@ -1,0 +1,46 @@
+<div class="jumbotron bg-transparent">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="display-2">NextWave Magazin<span class="vim-caret">e</span></h1>
+            </div>
+            <div class="col-md-4">
+                <a class="ht-tm-element btn btn-primary btn-shadow">EN</a>
+                <a class="ht-tm-element btn btn-outline-primary btn-shadow" id="vn">VN</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    // Set a Cookie
+    function setCookie(cName, cValue) {
+        let date = new Date();
+        date.setTime(date.getTime() + (86400 * 30));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+    }
+
+    var vn = document.getElementById("vn");
+
+    vn.addEventListener("click", function () {
+        // Apply setCookie
+        setCookie('lang', 'vi');
+        window.location.href = "/";
+    });
+
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bootstrap snippets">
+            <div class="ht-tm-componentsblock">
+                <h2><b>What is Artificial Intelligence?</b></h2>
+                <p><b>Artificial Intelligence (AI) </b>is the creation of systems that can perform tasks requiring human intelligence, like learning, reasoning, and decision-making. 
+                        It’s not just robots—AI powers things like voice assistants, recommendation engines, and even self-driving cars.
+                        AI includes areas like Machine Learning, Natural Language Processing, and Computer Vision. These technologies help machines understand data, learn from it, and improve over time.
+                        In essence, AI helps automate tasks, solve problems, and enhance how we interact with technology every day.</p>
+            </div>
+        </div>
+    </div>
+</div>

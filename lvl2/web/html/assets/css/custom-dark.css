@@ -1,0 +1,165 @@
+/* Custom overrides to refresh the neon dark look */
+:root {
+    --bg-body: #05060c;
+    --bg-panel: #121527;
+    --bg-panel-alt: #0b1120;
+    --bg-input: #0f172a;
+    --border-panel: rgba(125, 138, 185, 0.25);
+    --text-primary: #f5f6ff;
+    --text-muted: #8f9bbf;
+    --accent: #7c5cff;
+    --accent-strong: #9a7eff;
+    --accent-soft: rgba(124, 92, 255, 0.45);
+    --accent-secondary: #1fcad3;
+    --danger: #ff5b7e;
+}
+
+body {
+    color: var(--text-primary);
+    background: radial-gradient(circle at top, rgba(124, 92, 255, 0.25), transparent 55%),
+    radial-gradient(circle at 20% 20%, rgba(31, 202, 211, 0.2), transparent 45%),
+    var(--bg-body);
+    min-height: 100vh;
+}
+
+.jumbotron {
+    background: linear-gradient(135deg, rgba(9, 12, 35, 0.9), rgba(10, 10, 18, 0.9));
+    border: 1px solid var(--border-panel);
+    box-shadow: 0 20px 60px rgba(5, 6, 12, 0.8), 0 0 25px var(--accent-soft);
+    border-radius: 1.25rem;
+    padding: 3rem 3.5rem;
+}
+
+.panel,
+.card,
+.ht-tm-componentsblock,
+.modal-w3-content {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-panel);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(9, 12, 35, 0.85);
+    border-radius: 1.25rem;
+    padding: 2rem;
+}
+
+.panel-body {
+    background: var(--bg-panel-alt);
+    border-radius: 1rem;
+    padding: 1.75rem;
+}
+
+.media-block {
+    background: rgba(7, 12, 30, 0.65);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+textarea.form-control,
+input.form-control,
+input[type="text"],
+input[type="file"] {
+    background: var(--bg-input);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    border-radius: 0.85rem;
+    padding: 0.85rem 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea.form-control:focus,
+input.form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.2rem rgba(124, 92, 255, 0.35);
+    background: #131a33;
+}
+
+.btn,
+.btn-shadow {
+    border-radius: 999px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    padding: 0.7rem 1.75rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary,
+.btn-outline-primary,
+.btn-dark,
+.btn-light,
+.btn-danger {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45), 0 0 18px rgba(124, 92, 255, 0.25);
+}
+
+.btn-primary,
+.btn-outline-primary {
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    color: #fff;
+}
+
+.btn-outline-primary {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: transparent;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--danger), #ff8ba3);
+    box-shadow: 0 15px 30px rgba(255, 91, 126, 0.25);
+}
+
+.btn-light {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+.btn:hover,
+.btn:focus {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.55), 0 0 30px rgba(124, 92, 255, 0.45);
+}
+
+.btn:active {
+    transform: translateY(1px) scale(0.99);
+}
+
+.ht-tm-element.btn.btn-danger.btn-shadow.text-mono,
+.ht-tm-element.btn.btn-primary.btn-shadow,
+.ht-tm-element.btn.btn-outline-primary.btn-shadow {
+    text-transform: none;
+    letter-spacing: 0.04em;
+}
+
+.img-responsive.thumbnail {
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.65);
+}
+
+.close-w3 {
+    color: var(--text-primary);
+    text-shadow: 0 0 15px rgba(124, 92, 255, 0.6);
+}
+
+.modal-w3 {
+    background: rgba(4, 6, 14, 0.92);
+    backdrop-filter: blur(6px);
+}
+
+.ht-tm-componentsblock h2 {
+    color: var(--accent-secondary);
+    text-shadow: 0 0 30px rgba(31, 202, 211, 0.35);
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.05);
+}
+

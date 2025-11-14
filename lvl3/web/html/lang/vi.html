@@ -1,0 +1,39 @@
+<div class="jumbotron bg-transparent">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="display-2">Tạp Chí Trí Tuệ Nhân Tạ<span class="vim-caret">o</span></h1>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    // Set a Cookie
+    function setCookie(cName, cValue) {
+        let date = new Date();
+        date.setTime(date.getTime() + (86400 * 30));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+    }
+
+    var en = document.getElementById("en");
+    en.addEventListener("click", function () {
+        // Apply setCookie
+        setCookie('lang', 'en');
+        window.location.href = "/";
+    });
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bootstrap snippets">
+            <div class="ht-tm-componentsblock">
+                <h2><b>Trí Tuệ Nhân Tạo là gì?</b></h2>
+                <p><b>Trí Tuệ Nhân Tạo (AI) </b>là việc tạo ra các hệ thống có khả năng thực hiện các nhiệm vụ đòi hỏi trí thông minh của con người, như học hỏi, suy luận và ra quyết định. 
+                        AI không chỉ là robot—nó còn là công nghệ đứng sau trợ lý ảo, hệ thống gợi ý và cả ô tô tự lái.
+                        AI bao gồm nhiều lĩnh vực như Học Máy, Xử Lý Ngôn Ngữ Tự Nhiên và Thị Giác Máy Tính. Những công nghệ này giúp máy móc hiểu dữ liệu, học hỏi và cải thiện theo thời gian.
+                        Tóm lại, AI giúp tự động hóa công việc, giải quyết vấn đề và nâng cao cách chúng ta tương tác với công nghệ hàng ngày.</p>
+            </div>
+        </div>
+    </div>
+</div>
