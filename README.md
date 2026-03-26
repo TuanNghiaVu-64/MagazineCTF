@@ -4,7 +4,7 @@ A multi-level Capture The Flag (CTF) lab designed to teach web application secur
 
 ## Description
 
-MagazineCTF is a progressive web security CTF consisting of three levels, each requiring different techniques and vulnerabilities to RCE the server and read the flag in the root folder. The application simulates a blog platform with a comment system that allows users to post comments and upload files. Each level contains intentional security vulnerabilities that participants must identify and exploit to retrieve the flag.
+MagazineCTF is a progressive web security CTF consisting of three levels, each requiring combination of different techniques and vulnerabilities to form exploit chain tha will RCE the server and read the flag in the root folder. The application simulates a blog platform with a comment system that allows users to post comments and upload files. Each level contains intentional security vulnerabilities that participants must identify and exploit to retrieve the flag.
 
 ## Tech Stack
 
